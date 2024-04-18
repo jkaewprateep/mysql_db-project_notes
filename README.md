@@ -279,8 +279,8 @@ SELECT Customers.FullName, Bookings.BookingID FROM Customers, Bookings where Cus
 
 ## 🧸💬 REPLACE
 
-🦭💬 Not only update or insert but we hardly update, data engineers have some work in here. </br>
-🐑💬 ➰ That is because it does not validate some relationships but they need to perform instant of actions, aggregation table and trigger need to be defined. </br>
+🦭💬 ```Not only update or insert``` but we ```hardly update```, data engineers have some work in here. </br>
+🐑💬 ➰ That is because it does not ```validate some relationships``` but they need to perform ```instant of actions```, ```aggregation table``` and ```trigger``` need to be defined. </br>
 
 ```
 🧸💬 Update or insert into table Courses, is there multiple modes?
