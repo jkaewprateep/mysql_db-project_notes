@@ -203,12 +203,16 @@ DELIMITER ;
 
 ## 🧸💬 Stored procedure with variable values update with rowID
 
+🐑💬 ➰ How do telecommunication applications work with databases, I always attach datasets and results set table with an application that allows synchronizing update data records if required because I do not like to frequently update databases. </br>
+👧💬 🎈 That is a good idea for application, database, and security but some requirements they are working on central database update for guarantee transactions communication solution. Application services or communication message application is the first task and only requires query update of the database with different primary table keys. </br>
+🐐💬 ➰ Even the same procedure is called twice they are on different external variables if they return and you can use object references the same as table columns. 👤💬⁉️ How do you know that ⁉️ </br>
+
 ```
 🧸💬 SET new delimiter syntax to //
 DELIMITER // 
 
 🧸💬 Create a procedure name EvaluateProduct with input parameter and input parameter types.
-CREATE PROCEDURE UpdateBooking    ( booking_id INT, customer_id INT, booking_date DATE, tableNumber INT )
+CREATE PROCEDURE UpdateBooking    ( booking_id INT, customer_id INT, booking_date DATE, table number INT )
 	🧸💬 Begin by telling of the procedure statement block.
 	BEGIN
 		🧸💬 Declare variables.
@@ -216,43 +220,43 @@ CREATE PROCEDURE UpdateBooking    ( booking_id INT, customer_id INT, booking_dat
         	DECLARE COUNT_BOOKINGID INT; 
 		DECLARE MESSAGE VARCHAR(255);
 
-	🧸💬 Start transaction process statement.
-        START TRANSACTION;
-
-	🧸💬 Save target BookingsID to variable name CURRENT_BOOKINGID.
-        SET CURRENT_BOOKINGID = ( SELECT MAX( BookingsID ) + 1 AS "Number" FROM littlelemondb.bookings GROUP BY BookingsID ORDER BY BookingsID DESC LIMIT 1 );
-
-	🧸💬 Save the target number of BookingsID found to the variable name COUNT_BOOKINGID.
-        SET COUNT_BOOKINGID = ( SELECT COUNT( BookingsID ) FROM littlelemondb.bookings WHERE BookingsID = ANY ( 
-
-				SELECT BookingsID
-
-					FROM littlelemondb.bookings
-					WHERE TableNo = tableNumber
-					AND BookingDate = booking_date
-					) );
-
-        🧸💬 IF cause statement      
-        IF COUNT_BOOKINGID < 1 THEN 
-		SET MESSAGE = " - booking is not found";
-
-		🧸💬 Rollback transaction process statement.
-		ROLLBACK;
-
-	🧸💬 ELSE then updates the record with target values.
-	ELSE UPDATE littlelemondb.bookings 
-			SET BookingDate = booking_date, 
-            TableNo = tableNumber,
-            CustomerID = customer_id,
-            Customer_details_CustomerID = customer_id
-            
-            WHERE BookingsID = booking_id;
-			COMMIT;
-            SET MESSAGE = " - new booking updated";
-		END IF;
-
-	🧸💬 For display result set.
-	SELECT CONCAT("Table ", tableNumber, MESSAGE) AS "Booking status" ;
+		🧸💬 Start transaction process statement.
+	        START TRANSACTION;
+	
+		🧸💬 Save target BookingsID to variable name CURRENT_BOOKINGID.
+	        SET CURRENT_BOOKINGID = ( SELECT MAX( BookingsID ) + 1 AS "Number" FROM littlelemondb.bookings GROUP BY BookingsID ORDER BY BookingsID DESC LIMIT 1 );
+	
+		🧸💬 Save the target number of BookingsID found to the variable name COUNT_BOOKINGID.
+	        SET COUNT_BOOKINGID = ( SELECT COUNT( BookingsID ) FROM littlelemondb.bookings WHERE BookingsID = ANY ( 
+	
+					SELECT BookingsID
+	
+						FROM littlelemondb.bookings
+						WHERE TableNo = tableNumber
+						AND BookingDate = booking_date
+						) );
+	
+	        🧸💬 IF cause statement      
+	        IF COUNT_BOOKINGID < 1 THEN 
+			SET MESSAGE = " - booking is not found";
+	
+			🧸💬 Rollback transaction process statement.
+			ROLLBACK;
+	
+		🧸💬 ELSE then updates the record with target values.
+		ELSE UPDATE littlelemondb.bookings 
+				SET BookingDate = booking_date, 
+	            TableNo = tableNumber,
+	            CustomerID = customer_id,
+	            Customer_details_CustomerID = customer_id
+	            
+	            WHERE BookingsID = booking_id;
+				COMMIT;
+	            SET MESSAGE = " - new booking updated";
+			END IF;
+	
+		🧸💬 For display result set.
+		SELECT CONCAT("Table ", tableNumber, MESSAGE) AS "Booking status" ;
 
 	🧸💬 End by telling of the procedure statement block.
 	END	//
