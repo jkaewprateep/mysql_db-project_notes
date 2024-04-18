@@ -112,9 +112,9 @@ select *, NULLIF( DeliveryDate, "2022-05-25" ), COALESCE( DATE_ADD(DeliveryDate,
 
 ## 🧸💬 Stored procedure
 
-🐑💬 ➰ What is the delays process call update ⁉️ </br>
-🐐💬 ➰ Congession of activities from many types of clients in operations may cause some insert / update process required delays time for reference numbers or selected columns. Create a procedure that can process by itself and return when it finishes without delays from request, no delays mean interval gaps from multiple updates because they can be handled by the database not by client request. </br>
-🐐💬 ➰ Delay process cause of debugging from negotiation messages communications. </br>
+🐑💬 ➰ What is the ```delays process call update ⁉️``` </br>
+🐐💬 ➰ ```Congession of activities``` from many types of clients in operations may cause some ```insert/update processes``` to require delays time for reference numbers or selected columns. Create a procedure that can process by itself and return when it finishes without delays from request, no delays mean interval gaps from multiple updates because they can be ```handled by the database not by client request```. </br>
+🐐💬 ➰ Delay process can cause ```debugging from negotiation messages communications```. </br>
 
 ```
 🧸💬 Create a procedure or store procedure with input parameters and dataset result output as display.
