@@ -300,6 +300,9 @@ CREATE VIEW BookingsView AS SELECT BookingID, BookingDate, NumberOfGuests FROM B
 
 ## 🧸💬 CREATE FUNCTION
 
+🐑💬 ➰ In security and application requirements, procedures or prepared statements need a return value for some application ```remote execution event```. Some security engineers track of input/output of this function because of ```validation results``` and ```similarity execution costs``` for determination. </br>
+🦭💬 There are some reasons for monitoring and categorizing tasks as procedure or execution processes from ```similarity values return```, the priority of output changes, and ```application in communications```. Find one application that works often in response to the same message with the same behavior you can divide the system into clusters. </br>
+
 ```
 🧸💬 Create a function with input parameters.
 CREATE FUNCTION FindCost(order_id INT)
