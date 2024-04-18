@@ -151,24 +151,34 @@ DELIMITER ;
 ## 🧸💬 Stored procedure with variable values return
 
 ```
+🧸💬 Set delimiter syntax to // because of multiple client types support.
 DELIMITER //
 
-CREATE PROCEDURE EvaluateProduct( product_id VARCHAR(255), sold_items_2020 DECIMAL(7,2), sold_items_2021 DECIMAL(7,2), sold_items_2022 DECIMAL(7,2) ) 
-	BEGIN 
+🧸💬 Create a procedure name EvaluateProduct with input parameter and input parameter types.
+CREATE PROCEDURE EvaluateProduct( product_id VARCHAR(255), sold_items_2020 DECIMAL(7,2), sold_items_2021 DECIMAL(7,2), sold_items_2022 DECIMAL(7,2) )
+	🧸💬 Begin by telling of the procedure statement block.
+	BEGIN
+		🧸💬 Declare variables.
 		DECLARE temp_sold_items_2020 DECIMAL(7,2); 		
 		DECLARE temp_sold_items_2021 DECIMAL(7,2); 	
-		DECLARE temp_sold_items_2022 DECIMAL(7,2); 	
+		DECLARE temp_sold_items_2022 DECIMAL(7,2);
+		🧸💬 Select and save dataset results into target declared variables.
 		SELECT SUM(Quantity) INTO temp_sold_items_2020 FROM Orders WHERE ProductID IN ( product_id ) AND YEAR(Date) IN (  sold_items_2020 ) GROUP BY YEAR( Date );
 		SELECT SUM(Quantity) INTO temp_sold_items_2021 FROM Orders WHERE ProductID IN ( product_id ) AND YEAR(Date) IN (  sold_items_2021 ) GROUP BY YEAR( Date );
 		SELECT SUM(Quantity) INTO temp_sold_items_2022 FROM Orders WHERE ProductID IN ( product_id ) AND YEAR(Date) IN (  sold_items_2022 ) GROUP BY YEAR( Date );
 
+		🧸💬 Set variables for output call by external process.
 		SELECT @sold_items_2020 := temp_sold_items_2020;
 		SELECT @sold_items_2021 := temp_sold_items_2021;
 		SELECT @sold_items_2022 := temp_sold_items_2022;
-		
+
+		🧸💬 For display result set separated from exeternal return variables.
 		SELECT temp_sold_items_2020, temp_sold_items_2021, temp_sold_items_2022;
+
+	🧸💬 End by telling of the procedure statement block.
 	END//
 
+🧸💬 Set delimiter syntax to ;
 DELIMITER ; 
 ```
 
