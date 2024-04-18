@@ -372,8 +372,8 @@ EXPLAIN SELECT SUBSTRING( ReverseFullName, 1, 4 ) AS "FIRSTNAME" FROM Employees 
 
 ## 🧸💬 JSON object
 
-👧💬 🎈 Communication using JSON message objects is one recommendation method because they are handled as database objects and they can sorted and stored in the database for recall later. </br>
-🐐💬 The database filed had its own dimension and can read and the application can create response messages with their values and structure, reducing tables joined requirements. </br>
+👧💬 🎈 Communication using ```JSON message objects``` is one recommendation method because they are handled as database objects and they can sorted and stored in the database for recall later. </br>
+🐐💬 The database field had its ```own dimension``` and can read and the application can create response messages with their values and structure, ```reducing tables joined requirements```. </br>
 
 ```
 🧸💬 Selection from JSON object in MySQL.
