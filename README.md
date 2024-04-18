@@ -113,7 +113,10 @@ select *, NULLIF( DeliveryDate, "2022-05-25" ), COALESCE( DATE_ADD(DeliveryDate,
 ## 🧸💬 Stored procedure
 
 ```
+🧸💬 Create a procedure or store procedure with input parameters and dataset result output as display.
 CREATE PROCEDURE GetListOfOrdersInRange( MinimumValue INT, MaximumValue INT ) SELECT * FROM Orders WHERE Cost BETWEEN MinimumValue AND MaximumValue;
+
+🧸💬 Call the created procedure.
 CALL GetListOfOrdersInRange( 150, 600 );
 ```
 
