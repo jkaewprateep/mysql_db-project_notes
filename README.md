@@ -19,6 +19,7 @@ MySQL DB project notes - contribution for learning [META Advanced MySQL Topics](
 🦭💬 Dashboard not updated‼️  🐑💬 ➰ It is updated with it ready you can settings for multiple stage responses for query value with where conditions. 🐯💬 Not my TCP/IP. </br>
 
 ```
+🧸💬 Create table SQL statement syntax with required columns, default settings, value types, NULL value, and Primary Key.
 CREATE TABLE ContractInfo(
 	ContractID INT NOT NULL,
 	StaffID INT NOT NULL,
@@ -28,6 +29,7 @@ CREATE TABLE ContractInfo(
 	PRIMARY KEY (ContractID)
 );
 
+🧸💬 Add database table index to the table with foreigner reference. 
 ALTER TABLE ContractInfo 
 ADD CONSTRAINT FK_StaffID_ContractInfo
 FOREIGN KEY (StaffID) REFERENCES Staff(StaffID);
