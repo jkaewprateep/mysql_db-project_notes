@@ -46,7 +46,7 @@ FOREIGN KEY (StaffID) REFERENCES Staff(StaffID);
 💃( 👩‍🏫 )💬 The trends of automation batch process with ETL processes such as Apache Spark, and data warehouse as micro-services deployment for instant deployment. Similarly to this allows fast deployment using Kubernetes or Docker applications with instant run time library deployment support. </br>
 🐣💬 The login process by comparing username update status and not update status for time login and update value is specific in some database application 🥹💬 That is a secret hidden in the application not directly in the database when they query, first they will talk about it. </br> 
 🦭💬 Linux OS capable commands, notifications, and actions for remote services activation and I do not need to create dedicated users to start applications for the remote services for application and database security. </br>
-🦤💬 ```Deployment scripts```, ```installation```, and ```migration scripts``` for databases and applications are important. They are working with ```validation steps``` and this create ```advantage of these SQL commands``` in our notes. </br>
+🦤💬 ```Deployment scripts```, ```installation```, and ```migration scripts``` for databases and applications are important. They are working with ```validation steps``` and this creates ```advantage of these SQL commands``` in our notes. </br>
 
 <p align="center" width="100%">
     <img width="40%" src="https://github.com/jkaewprateep/mysql_db-project_notes/blob/main/application_withdatabase.png"> </br>
@@ -54,6 +54,8 @@ FOREIGN KEY (StaffID) REFERENCES Staff(StaffID);
 </p>
 
 ## 🧸💬 ALTER table
+
+🧸💬 ALTER table, inform the database server of the table object and ready for the schema to apply for new settings or the complete process can be blocked of the next command generated to apply. </br>
 
 ```
 ALTER TABLE Staff ADD CONSTRAINT PK_StaffID PRIMARY KEY (StaffID);
