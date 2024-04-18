@@ -33,6 +33,11 @@ ADD CONSTRAINT FK_StaffID_ContractInfo
 FOREIGN KEY (StaffID) REFERENCES Staff(StaffID);
 ```
 
+<p align="center" width="100%">
+    <img width="40%" src="https://github.com/jkaewprateep/mysql_db-project_notes/blob/main/DekDee_Client.png"> </br>
+    <b> My simple client free for customer </b> </br>
+</p>
+
 ## 🧸💬 ALTER table
 
 ```
