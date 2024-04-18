@@ -373,8 +373,10 @@ EXPLAIN SELECT SUBSTRING( ReverseFullName, 1, 4 ) AS "FIRSTNAME" FROM Employees 
 ## 🧸💬 JSON object
 
 ```
+🧸💬 Selection from JSON object in MySQL.
 select ActivityID, Properties->'$.Order', Properties->'$.ClientID', Properties->'$.ProductID' from Activity WHERE Properties->'$.Order' = "True";
 
+🧸💬 Selection from JSON object in MySQL.
 SELECT Activity.Properties ->>'$.ProductID' 
 AS ProductID, Products.ProductName, Products.BuyPrice, Products.SellPrice 
 FROM Products INNER JOIN Activity 
