@@ -203,9 +203,9 @@ DELIMITER ;
 
 ## 🧸💬 Stored procedure with variable values update with rowID
 
-🐑💬 ➰ How do telecommunication applications work with databases, I always attach datasets and results set table with an application that allows synchronizing update data records if required because I do not like to frequently update databases. </br>
-👧💬 🎈 That is a good idea for application, database, and security but some requirements they are working on central database update for guarantee transactions communication solution. Application services or communication message application is the first task and only requires query update of the database with different primary table keys. </br>
-🐐💬 ➰ Even the same procedure is called twice they are on different external variables if they return and you can use object references the same as table columns. 👤💬⁉️ How do you know that ⁉️ </br>
+🐑💬 ➰ How do ```telecommunication applications work with databases```, I always attach datasets and results set table with an application that allows ```synchronizing update data records``` if required because I do not like to frequently update databases. </br>
+👧💬 🎈 That is a good idea for application, database, and security but some requirements they are working on central database update for ```guarantee transactions communication solution```. Application services or communication message application is the first task and only requires query update of the database with different primary table keys. </br>
+🐐💬 ➰ Even if the ```same procedure is called twice``` they are on ```different external variables``` if they return and you can use object references the same as table columns. ```👤💬⁉️ How do you know that ⁉️``` </br>
 
 ```
 🧸💬 SET new delimiter syntax to //
