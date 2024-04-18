@@ -392,3 +392,11 @@ ON Products.ProductID = Activity.Properties ->>'$.ProductID'
 WHERE Activity.Properties ->>'$.Order' = "True";
 ```
 [JSON TensrFlow](https://github.com/jkaewprateep/json_data_set/blob/main/README.md)
+
+---
+
+<p align="center" width="100%">
+    <img width="30%" src="https://github.com/jkaewprateep/mysql_db-project_notes/blob/main/12.png">
+    <img width="30%" src="https://github.com/jkaewprateep/mysql_db-project_notes/blob/main/13.png"> </br>
+    <b> 🥺💬 รับจ้างเขียน functions </b> </br>
+</p>
