@@ -264,6 +264,7 @@ CREATE PROCEDURE UpdateBooking    ( booking_id INT, customer_id INT, booking_dat
 🧸💬 SET delimiter syntax to ;
 DELIMITER ; 
 ```
+[Database procedure](https://github.com/jkaewprateep/advanced_mysql_topics_notes/blob/main/README.md#-database-procedure)
 
 ## 🧸💬 INNER JOIN
 
@@ -276,6 +277,7 @@ DELIMITER ;
 🧸💬 Inner join tables Bookings and Customers
 SELECT Customers.FullName, Bookings.BookingID FROM Customers, Bookings where Customers.CustomerID = Bookings.CustomerID and Bookings.BookingDate = "2021-11-11";
 ```
+[Database table join](https://github.com/jkaewprateep/advanced_mysql_topics_notes/blob/main/README.md#-database-table-join)
 
 ## 🧸💬 REPLACE
 
@@ -297,6 +299,7 @@ REPLACE INTO Courses ( CourseName, Cost ) VALUES ("Kabasa", 20.00);
 🧸💬 Create of temporary table view with parameters input and selection conditions.
 CREATE VIEW BookingsView AS SELECT BookingID, BookingDate, NumberOfGuests FROM Bookings WHERE BookingDate < "2021-11-13" AND NumberOfGuests > 3;
 ```
+[Temporary view table](https://github.com/jkaewprateep/advanced_mysql_topics_notes/blob/main/README.md#-database-table-temporary-table-view)
 
 ## 🧸💬 CREATE FUNCTION
 
@@ -329,6 +332,7 @@ DETERMINISTIC
 🧸💬 Return value.
 RETURN (select SUM(Orders.Quantity) from Products, Orders where Products.ProductID = Orders.ProductID AND Products.ProductID = "P3" AND YEAR(Orders.Date) IN ( year_number ) GROUP BY Products.ProductID);
 ```
+[Database function](https://github.com/jkaewprateep/advanced_mysql_topics_notes/blob/main/README.md#-database-function)
 
 ## 🧸💬 CREATE TRIGGER
 
@@ -369,6 +373,7 @@ SELECT SUBSTRING( ReverseFullName, 1, 4 ) AS "FIRSTNAME" FROM Employees WHERE SU
 🧸💬 Explain SQL query statement for verify of index key perform as primary in selection.
 EXPLAIN SELECT SUBSTRING( ReverseFullName, 1, 4 ) AS "FIRSTNAME" FROM Employees WHERE SUBSTRING( ReverseFullName, 1, 4 ) = "Tolo";
 ```
+[Database table indexes](https://github.com/jkaewprateep/advanced_mysql_topics_notes/blob/main/README.md#-database-table-indexes)
 
 ## 🧸💬 JSON object
 
