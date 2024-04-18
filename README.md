@@ -127,24 +127,35 @@ CALL GetListOfOrdersInRange( 150, 600 );
 ## 🧸💬 Stored procedure with IF cause
 
 ```
+🧸💬 Set delimiter syntax to // because of multiple client types support.
 DELIMITER // 
 
-CREATE Procedure GetDiscount(OrderIDInput INT) 
-     BEGIN 
+🧸💬 Create a procedure name EvaluateProduct with input parameter and input parameter types.
+CREATE Procedure GetDiscount(OrderIDInput INT)
+     🧸💬 Begin by telling of the procedure statement block.
+     BEGIN
+         🧸💬 Declare variables.
          DECLARE cost_after_discount DECIMAL(7,2); 
          DECLARE current_cost DECIMAL(7,2); 
-         DECLARE order_quantity INT; 
+         DECLARE order_quantity INT;
+         🧸💬 Select and save dataset results into target declared variables.
          SELECT Quantity INTO order_quantity FROM Orders WHERE OrderID = OrderIDInput; 
-         SELECT Cost INTO current_cost FROM Orders WHERE OrderID = OrderIDInput; 
+         SELECT Cost INTO current_cost FROM Orders WHERE OrderID = OrderIDInput;
+
+	🧸💬 IF cause statement.
         IF order_quantity >= 20 THEN
           SET cost_after_discount = current_cost - (current_cost * 0.2);              
         ELSEIF order_quantity >= 10 THEN
           SET cost_after_discount = current_cost - (current_cost * 0.1); 
         ELSE SET cost_after_discount = current_cost;
         END IF;
+
+    🧸💬 For display result set.
     SELECT cost_after_discount; 
+🧸💬 End by telling of the procedure statement block.
 END//
 
+🧸💬 Set delimiter syntax to ;
 DELIMITER ; 
 ```
 
@@ -172,7 +183,7 @@ CREATE PROCEDURE EvaluateProduct( product_id VARCHAR(255), sold_items_2020 DECIM
 		SELECT @sold_items_2021 := temp_sold_items_2021;
 		SELECT @sold_items_2022 := temp_sold_items_2022;
 
-		🧸💬 For display result set separated from exeternal return variables.
+		🧸💬 For display result set separated from external return variables.
 		SELECT temp_sold_items_2020, temp_sold_items_2021, temp_sold_items_2022;
 
 	🧸💬 End by telling of the procedure statement block.
