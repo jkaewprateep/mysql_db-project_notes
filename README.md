@@ -332,6 +332,9 @@ RETURN (select SUM(Orders.Quantity) from Products, Orders where Products.Product
 
 ## 🧸💬 CREATE TRIGGER
 
+👧💬 🎈 A trigger is useful but you need to understand of process and data model because it also ```can block records updated by multiple triggers within and different tables```. </br>
+🐑💬 ➰ A single-role process is safer but uses less of triggers and an update is a design, a trigger can create of ```logging or monitoring status``` for some external program that is useful when you need to monitor some events that are not logging into the main database tables. Creating a new table with defined columns and attributes is preferred and you can create a trigger to perform ```aggregation tasks``` from custom fields in the new ```table design```. </br>
+
 ```
 🧸💬 Create a trigger with the name OrderQtyCheck.
 CREATE TRIGGER OrderQtyCheck
