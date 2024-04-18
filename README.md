@@ -55,7 +55,9 @@ FOREIGN KEY (StaffID) REFERENCES Staff(StaffID);
 
 ## 🧸💬 ALTER table
 
-🧸💬 ALTER table, inform the database server of the table object and ready for the schema to apply for new settings or the complete process can be blocked of the next command generated to apply. </br>
+🧸💬 ```ALTER table```, ```inform``` the database server of the table object and ```ready for the schema``` to apply for new settings or the complete process can be blocked of the next command generated to apply. </br>
+🐐💬 ➰ There is ```update-alter``` action result in new record had differentiate when column names are different or update but today update command and common command are include of schema activity if they are required. </br>
+
 
 ```
 ALTER TABLE Staff ADD CONSTRAINT PK_StaffID PRIMARY KEY (StaffID);
