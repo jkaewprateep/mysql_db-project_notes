@@ -126,6 +126,10 @@ CALL GetListOfOrdersInRange( 150, 600 );
 
 ## 🧸💬 Stored procedure with IF cause
 
+🐣💬 What is ```IF CAUSE``` procedure statement ⁉️ </br>
+🐐💬 ➰ When you are not aware of SQL statement syntax often found with ```THEN``` and ```tab indent```, not guaranteed return from condition means they can return the matching value ```condition met``` or return ```NULL```. Use case condition statement handle matching and often use ```THEN``` in the statement does not consume of the extra process. </br> 
+🐣💬 There are use cases of ```guarantee return``` and ```non-guarantee return``` when the process is a priority and time response is a priority, often use ```return``` or ```break``` if available. </br>
+
 ```
 🧸💬 Set delimiter syntax to // because of multiple client types support.
 DELIMITER // 
