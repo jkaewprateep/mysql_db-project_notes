@@ -301,14 +301,29 @@ CREATE VIEW BookingsView AS SELECT BookingID, BookingDate, NumberOfGuests FROM B
 ## 🧸💬 CREATE FUNCTION
 
 ```
-CREATE FUNCTION FindCost(order_id INT) 
-RETURNS DECIMAL (5,2) 
-DETERMINISTIC 
+🧸💬 Create a function with input parameters.
+CREATE FUNCTION FindCost(order_id INT)
+
+🧸💬 Specific return type for the creating function.
+RETURNS DECIMAL (5,2)
+
+🧸💬 To return value from this thread execution.
+DETERMINISTIC
+
+🧸💬 Return value.
 RETURN (SELECT Cost FROM Orders WHERE OrderID = order_id);
 
-CREATE FUNCTION FindSoldQuantity (year_number INT) 
-RETURNS DECIMAL (7,2) 
-DETERMINISTIC 
+- - -
+🧸💬 Create a function with input parameters.
+CREATE FUNCTION FindSoldQuantity (year_number INT)
+
+🧸💬 Specific return type for the creating function.
+RETURNS DECIMAL (7,2)
+
+🧸💬 To return value from this thread execution.
+DETERMINISTIC
+
+🧸💬 Return value.
 RETURN (select SUM(Orders.Quantity) from Products, Orders where Products.ProductID = Orders.ProductID AND Products.ProductID = "P3" AND YEAR(Orders.Date) IN ( year_number ) GROUP BY Products.ProductID);
 ```
 
