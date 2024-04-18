@@ -13,6 +13,8 @@ MySQL DB project notes - contribution for learning [META Advanced MySQL Topics](
 
 ## 🧸💬 CREATE table
 
+👧💬 🎈 Simple by define of information services and tabular storages for data information and aggregation process make it easy from installation, development, testing, deployment until maintenance and services </br>.
+
 ```
 CREATE TABLE ContractInfo(
 	ContractID INT NOT NULL,
