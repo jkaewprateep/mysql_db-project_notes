@@ -167,7 +167,7 @@ DELIMITER ;
 
 👧💬 🎈 What is the ```external variables indicator ⁉️ ```. </br>
 🐐💬 ➰ By intention some ```SQL developers``` create ```external variables``` or ```shared variables``` for access them later, this behavior allows some applications to ```query records``` or selection interactions for reports and matching of ```CTI user's registration``` but this method does not guarantee results please use CTI interfaces provided. </br>
-👤💬 It is our plan, to lures you with high performance values ... open request for full report guarantee with detail. 🐑💬 ➰ It is internal use but it is a value we had interface you can use more easily and have updates. </br>
+👤💬 It is our plan, to lures you with high-performance values ... open request for full report guarantee with detail. 🐑💬 ➰ It is internal use but it is a value we had interface you can use more easily and have updates. </br>
 
 ```
 🧸💬 Set delimiter syntax to // because of multiple client types support.
@@ -289,9 +289,9 @@ REPLACE INTO Courses ( CourseName, Cost ) VALUES ("Kabasa", 20.00);
 
 ## 🧸💬 Temporary VIEW table
 
-👧💬 🎈 Temporary table view is partitioned because they are working internally for intermitted results. </br>
-🦭💬 What is partition hacking⁉️ </br>
-🐐💬 ➰ You cannot create a new view or change the view records selection conditions but you can create a new table with a similar structure, in selection use full name specification. </br>
+👧💬 🎈 ```Temporary table view``` is ```partitioned``` because they are working internally for intermitted results. </br>
+🦭💬 What is ```partition hacking⁉️``` </br>
+🐐💬 ➰ You ```cannot create a new view``` or change the view records selection conditions but you can ```create a new table with a similar structure```, in selection use ```full name specification```. ```👤💬 Booo~ ``` </br>
 
 ```
 🧸💬 Create of temporary table view with parameters input and selection conditions.
