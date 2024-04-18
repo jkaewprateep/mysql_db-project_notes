@@ -88,17 +88,22 @@ ALTER TABLE FoodOrders CHANGE Order_status DeliveryStatus VARCHAR(15);
 ALTER TABLE FoodOrders RENAME OrderDeliveryStatus;
 ```
 
-## 🧸💬 COLUMNS CONTAMINATION AND DATE FORMAT AND CONDITIONS
+## 🧸💬 COLUMNS CONCATENATION AND DATE FORMAT AND CONDITIONS
 
 ```
+🧸💬 Concatinate of columns Name, "-", Quantity, "-" and OrderStatus.
 select CONCAT(LCASE(Name), "-", mg_orders.Quantity, "-", UCASE(OrderStatus)) from item, mg_orders where item.ItemID = mg_orders.ItemId;
 
+🧸💬 Round up the Cost column Cost with the calculation value and set the new name as HandlingCost.
 select ROUND(Cost * 5 / 100, 2) AS "HandlingCost" from mg_orders;
 
+🧸💬 Apply Date format to column DeliveryDate with weekday format string indicator.
 select DATE_FORMAT(DeliveryDate, '%W') from mg_orders;
 
+🧸💬 Compare not null for column name DeliveryDate, if not found set it to "NOT DELIVERED".
 select *, COALESCE( DeliveryDate, "NOT DELIVERED" ), COALESCE( DATE_ADD(DeliveryDate, INTERVAL 30 DAY), "NOT DELIVERED" ) AS "TargetDate" from mg_orders;
 
+🧸💬 Return NULL by conditions, compare not null and set target value.
 select *, NULLIF( DeliveryDate, "2022-05-25" ), COALESCE( DATE_ADD(DeliveryDate, INTERVAL 30 DAY), "NOT DELIVERED" ) AS "TargetDate" from mg_orders;
 ```
 
