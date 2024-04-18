@@ -165,6 +165,9 @@ DELIMITER ;
 
 ## 🧸💬 Stored procedure with variable values return
 
+👧💬 🎈 What is the ```external variables indicator ⁉️ ```. </br>
+🐐💬 ➰ By intention some SQL developers create external variables or shared variables for access them later, this behavior allows some applications to query records or selection interactions for reports and matching of CTI user's registration but this method does not guarantee results please use CTI interfaces provided. </br>
+
 ```
 🧸💬 Set delimiter syntax to // because of multiple client types support.
 DELIMITER //
