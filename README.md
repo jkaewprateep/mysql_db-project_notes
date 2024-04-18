@@ -283,7 +283,7 @@ SELECT Customers.FullName, Bookings.BookingID FROM Customers, Bookings where Cus
 🐑💬 ➰ That is because it does not validate some relationships but they need to perform instant of actions, aggregation table and trigger need to be defined. </br>
 
 ```
-🧸💬 Update or insert into table Courses
+🧸💬 Update or insert into table Courses, is there multiple modes?
 REPLACE INTO Courses ( CourseName, Cost ) VALUES ("Kabasa", 20.00);
 ```
 
