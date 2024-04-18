@@ -35,6 +35,8 @@ ADD CONSTRAINT FK_StaffID_ContractInfo
 FOREIGN KEY (StaffID) REFERENCES Staff(StaffID);
 ```
 
+🐑💬 ➰ Registration method, they are matric of values submitted to event listener and there are multiple of events listeners depending of their functions, architecture, communication methods and user requirements when forward message services available with message server services and information for authentication servers and registration server as required at the first step of interactions beginning. </br>
+
 <p align="center" width="100%">
     <img width="40%" src="https://github.com/jkaewprateep/mysql_db-project_notes/blob/main/DekDee_Client.png"> </br>
     <b> My simple client free for customer, embedded message for CTI communications </b> </br>
