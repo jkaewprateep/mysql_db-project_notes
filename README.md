@@ -1,5 +1,5 @@
 # mysql_db-project_notes
-MySQL DB project notes - contribution for learning [Advanced MySQL Topics](https://coursera.org/share/f475813ed222acfa20ff3840f5c8b358)
+MySQL DB project notes - contribution for learning [META Advanced MySQL Topics](https://coursera.org/share/f475813ed222acfa20ff3840f5c8b358)
 
 🧸💬 Will comeback and complete after eating a banana leaf 🐑💬 ➰ แปลว่ามันหิวข้าวมาก
 
