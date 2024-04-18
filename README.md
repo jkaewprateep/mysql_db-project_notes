@@ -267,18 +267,20 @@ DELIMITER ;
 
 ## 🧸💬 INNER JOIN
 
-🐑💬 ➰  Try to use INNER join because of the resultset when calling.  🦭💬 But you call outer join in LINQ than inner join </br>
-🐑💬 ➰ I think I missed some lines here, I like to find some details out of the dot notation and object explorer that can help with application capacity. </br> 
-🦭💬 I remember you use outer join for most of the query, lower for string comparisons, and string switch case for conditions. </br>
-🐑💬 ➰ That is because it should work as it displays, I like to hack testers when they test the program running smoothly but they review their test cases. </br>
+🐑💬 ➰ Try to use ```INNER join``` because of the resultset when calling.  🦭💬 But you call ```outer join``` in ```LINQ``` than inner join </br>
+🐑💬 ➰ I think I missed some lines here, I like to find some details out of the ```dot notation``` and ```object explorer``` that can help with application capacity. </br> 
+🦭💬 I remember you use outer join for most of the query, lower for string comparisons, and string ```switch case``` for conditions. </br>
+🐑💬 ➰ That is because ```it should work as it displays```, I like to hack testers when they test the program running smoothly but they review their test cases. </br>
 
 ```
+🧸💬 Inner join tables Bookings and Customers
 SELECT Customers.FullName, Bookings.BookingID FROM Customers, Bookings where Customers.CustomerID = Bookings.CustomerID and Bookings.BookingDate = "2021-11-11";
 ```
 
 ## 🧸💬 REPLACE
 
 ```
+🧸💬 Update or insert into table Courses
 REPLACE INTO Courses ( CourseName, Cost ) VALUES ("Kabasa", 20.00);
 ```
 
