@@ -43,9 +43,11 @@ FOREIGN KEY (StaffID) REFERENCES Staff(StaffID);
     <b> My simple client free for customer, embedded message for CTI communications </b> </br>
 </p>
 
+💃( 👩‍🏫 )💬 The trends of automation batch process with ETL processes such as Apache Spark, and data warehouse as micro-services deployment for instant deployment. Similar to this allows fast deployment using Kubernetes or Docker applications with instant run time library deployment support. </br>
+
 <p align="center" width="100%">
     <img width="40%" src="https://github.com/jkaewprateep/mysql_db-project_notes/blob/main/application_withdatabase.png"> </br>
-    <b> My simple client with database communication on web application engine support RedHat and Debain </b> </br>
+    <b> My simple client with database communication on web application engine support RedHat and Debian </b> </br>
 </p>
 
 ## 🧸💬 ALTER table
