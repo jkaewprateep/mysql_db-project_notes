@@ -289,7 +289,12 @@ REPLACE INTO Courses ( CourseName, Cost ) VALUES ("Kabasa", 20.00);
 
 ## 🧸💬 Temporary VIEW table
 
+👧💬 🎈 Temporary table view is partitioned because they are working internally for intermitted results. </br>
+🦭💬 What is partition hacking⁉️ </br>
+🐐💬 ➰ You cannot create a new view or change the view records selection conditions but you can create a new table with a similar structure, in selection use full name specification. </br>
+
 ```
+🧸💬 Create of temporary table view with parameters input and selection conditions.
 CREATE VIEW BookingsView AS SELECT BookingID, BookingDate, NumberOfGuests FROM Bookings WHERE BookingDate < "2021-11-13" AND NumberOfGuests > 3;
 ```
 
