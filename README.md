@@ -167,6 +167,7 @@ DELIMITER ;
 
 👧💬 🎈 What is the ```external variables indicator ⁉️ ```. </br>
 🐐💬 ➰ By intention some ```SQL developers``` create ```external variables``` or ```shared variables``` for access them later, this behavior allows some applications to ```query records``` or selection interactions for reports and matching of ```CTI user's registration``` but this method does not guarantee results please use CTI interfaces provided. </br>
+👤💬 It is our plan, to lures you with high performance values ... open request for full report guarantee with detail. </br>
 
 ```
 🧸💬 Set delimiter syntax to // because of multiple client types support.
