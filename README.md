@@ -60,22 +60,31 @@ FOREIGN KEY (StaffID) REFERENCES Staff(StaffID);
 
 
 ```
+🧸💬 Ready table Staff and create a primary index on column StaffID with the name PK_StaffID.
 ALTER TABLE Staff ADD CONSTRAINT PK_StaffID PRIMARY KEY (StaffID);
 
+🧸💬  Ready table Staff and update PhoneNumber column, value type, and attribute.
 ALTER TABLE Staff MODIFY PhoneNumber INT NOT NULL;
 
+🧸💬  Ready table Staff and update PhoneNumber column, value type, and attribute.
 ALTER TABLE Staff ADD Role VARCHAR(50) NOT NULL;
 
+🧸💬  Ready table Staff and remove PhoneNumber column.
 ALTER TABLE Staff DROP PhoneNumber;
 
+🧸💬  Ready table FoodOrders and create one column named OrderDate with attributes.
 ALTER TABLE FoodOrders ADD COLUMN OrderDate DATE NOT NULL;
 
+🧸💬  Ready table FoodOrders and create one foreign key from column name CustomerID to table name Customers with column name CustomerID.
 ALTER TABLE FoodOrders ADD FOREIGN KEY(CustomerID) REFERENCES Customers(CustomerID);
 
+🧸💬  Ready table FoodOrders and remove column OrderDate.
 ALTER TABLE FoodOrders DROP COLUMN OrderDate;
 
+🧸💬  Ready table FoodOrders and update columns Order_status and DeliveryStatus with type VARCHAR(15).
 ALTER TABLE FoodOrders CHANGE Order_status DeliveryStatus VARCHAR(15);
 
+🧸💬  Ready table FoodOrders and rename to OrderDeliveryStatus.
 ALTER TABLE FoodOrders RENAME OrderDeliveryStatus;
 ```
 
