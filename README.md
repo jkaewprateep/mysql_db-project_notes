@@ -333,13 +333,24 @@ RETURN (select SUM(Orders.Quantity) from Products, Orders where Products.Product
 ## 🧸💬 CREATE TRIGGER
 
 ```
-CREATE TRIGGER OrderQtyCheck  
-  BEFORE INSERT ON Orders  
-  FOR EACH ROW  
-BEGIN 
+🧸💬 Create a trigger with the name OrderQtyCheck.
+CREATE TRIGGER OrderQtyCheck
+
+  🧸💬 Assign trigger event response.
+  BEFORE INSERT ON Orders
+
+  🧸💬 Aquire a new row from the resultset.
+  FOR EACH ROW
+
+🧸💬 Begin statement 
+BEGIN
+
+  🧸💬 IF cause conditions 
   IF NEW.Quantity < 0 THEN  
     SET NEW.Quantity = 0; 
-  END IF; 
+  END IF;
+
+🧸💬 End statement 
 END;
 ```
 
