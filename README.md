@@ -56,7 +56,7 @@ FOREIGN KEY (StaffID) REFERENCES Staff(StaffID);
 ## 🧸💬 ALTER table
 
 🧸💬 ```ALTER table```, ```inform``` the database server of the table object and ```ready for the schema``` to apply for new settings or the complete process can be blocked of the next command generated to apply. </br>
-🐐💬 ➰ There is ```update-alter``` action result in new record had differentiate when column names are different or update but today update command and common command are include of schema activity if they are required. </br>
+🐐💬 ➰ There is ```update-alter``` action resulting in a new record differentiated when column names are different or updated but today update command and common command are included realted to schema activity if they are required. </br>
 
 
 ```
@@ -89,6 +89,9 @@ ALTER TABLE FoodOrders RENAME OrderDeliveryStatus;
 ```
 
 ## 🧸💬 COLUMNS CONCATENATION AND DATE FORMAT AND CONDITIONS
+
+🦭💬 What is ```internal database concatenation ⁉️``` </br>
+🐐💬 ➰ In the past alter table was required for every activity and they are separated by user permission and database permission, alter ```does not immediately update``` of the target table or object instant but it requires application. Select and update are used for the validation process, someone can ```alter the table for concatenate value``` which is a single called internal concatenate and there are many of ways depending on your ```database security administrator```. </br>   
 
 ```
 🧸💬 Concatinate of columns Name, "-", Quantity, "-" and OrderStatus.
