@@ -16,7 +16,7 @@ MySQL DB project notes - contribution for learning [META Advanced MySQL Topics](
 👧💬 🎈 Simple by definition of information services and tabular storages for data information and aggregation process make it easy from installation, development, testing, deployment until maintenance and services </br>
 🦤💬 ER-diagrams are useful at this stage when someone thinks it is work time amount on a simple chart diagram when they can start defining tables and procedures right-the-way, look into this side when all meta information is confirmed and process related are validated of data fields information. Simple database columns field mapping is easy and simple as eyes seeing but aggregated results do not always to be first-level observation, aggregation including time intervals, and update required information because sometimes it does not include data information in bale only but actions from users or results from confirmation process. </br>
 💃( 👩‍🏫 )💬 Some examples of web-services response with database application when results from query interfaces response when it is ready or stages message communication, this kind of messages communication repeatedly as cycle and it reply with information instant when it ready but only complete filed flagged, aggregation of this kind of information required communications and data flow diagrams. </br>
-🦭💬 Dashboard not updated‼️  🐑💬 ➰ It update with it ready you can settings for multiple stage response for query value with where conditions. </br>
+🦭💬 Dashboard not updated‼️  🐑💬 ➰ It is updated with it ready you can settings for multiple stage responses for query value with where conditions. 🐯💬 Not my TCP/IP. </br>
 
 ```
 CREATE TABLE ContractInfo(
