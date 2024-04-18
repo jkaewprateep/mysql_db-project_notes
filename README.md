@@ -204,19 +204,26 @@ DELIMITER ;
 ## 🧸💬 Stored procedure with variable values update with rowID
 
 ```
+🧸💬 SET new delimiter syntax to //
 DELIMITER // 
 
-CREATE PROCEDURE UpdateBooking    ( booking_id INT, customer_id INT, booking_date DATE, tableNumber INT ) 
-	BEGIN 
+🧸💬 Create a procedure name EvaluateProduct with input parameter and input parameter types.
+CREATE PROCEDURE UpdateBooking    ( booking_id INT, customer_id INT, booking_date DATE, tableNumber INT )
+	🧸💬 Begin by telling of the procedure statement block.
+	BEGIN
+		🧸💬 Declare variables.
 		DECLARE CURRENT_BOOKINGID INT; 
-        DECLARE COUNT_BOOKINGID INT; 
+        	DECLARE COUNT_BOOKINGID INT; 
 		DECLARE MESSAGE VARCHAR(255);
-        
+
+	🧸💬 Start transaction process statement.
         START TRANSACTION;
-        
+
+	🧸💬 Save target BookingsID to variable name CURRENT_BOOKINGID.
         SET CURRENT_BOOKINGID = ( SELECT MAX( BookingsID ) + 1 AS "Number" FROM littlelemondb.bookings GROUP BY BookingsID ORDER BY BookingsID DESC LIMIT 1 );
-        
-                SET COUNT_BOOKINGID = ( SELECT COUNT( BookingsID ) FROM littlelemondb.bookings WHERE BookingsID = ANY ( 
+
+	🧸💬 Save the target number of BookingsID found to the variable name COUNT_BOOKINGID.
+        SET COUNT_BOOKINGID = ( SELECT COUNT( BookingsID ) FROM littlelemondb.bookings WHERE BookingsID = ANY ( 
 
 				SELECT BookingsID
 
@@ -225,11 +232,15 @@ CREATE PROCEDURE UpdateBooking    ( booking_id INT, customer_id INT, booking_dat
 					AND BookingDate = booking_date
 					) );
 
-              
+        🧸💬 IF cause statement      
         IF COUNT_BOOKINGID < 1 THEN 
-			SET MESSAGE = " - booking is not found";
-			ROLLBACK;
-        ELSE UPDATE littlelemondb.bookings 
+		SET MESSAGE = " - booking is not found";
+
+		🧸💬 Rollback transaction process statement.
+		ROLLBACK;
+
+	🧸💬 ELSE then updates the record with target values.
+	ELSE UPDATE littlelemondb.bookings 
 			SET BookingDate = booking_date, 
             TableNo = tableNumber,
             CustomerID = customer_id,
@@ -239,10 +250,14 @@ CREATE PROCEDURE UpdateBooking    ( booking_id INT, customer_id INT, booking_dat
 			COMMIT;
             SET MESSAGE = " - new booking updated";
 		END IF;
-        
-		SELECT CONCAT("Table ", tableNumber, MESSAGE) AS "Booking status" ;
+
+	🧸💬 For display result set.
+	SELECT CONCAT("Table ", tableNumber, MESSAGE) AS "Booking status" ;
+
+	🧸💬 End by telling of the procedure statement block.
 	END	//
 
+🧸💬 SET delimiter syntax to ;
 DELIMITER ; 
 ```
 
