@@ -358,9 +358,15 @@ END;
 ```
 
 ## 🧸💬 EXPLAIN and INDEXES
+
+👧💬 🎈 ```IT project delivery``` also included index database tables and secured communication messages, authentication and performance test comparison results, and development plan and maintenance plan. </br>
+🐐💬 Comparison included ```time spent``` for query, screenshots of ```execution result```, ```time snaps```, and ```table explanation```. ```👤💬  It is the same as table definition but they need to see if selection is performed on target keys```. </br>  
+
 ```
+🧸💬 SQL query statement.
 SELECT SUBSTRING( ReverseFullName, 1, 4 ) AS "FIRSTNAME" FROM Employees WHERE SUBSTRING( ReverseFullName, 1, 4 ) = "Tolo";
 
+🧸💬 Explain SQL query statement for verify of index key perform as primary in selection.
 EXPLAIN SELECT SUBSTRING( ReverseFullName, 1, 4 ) AS "FIRSTNAME" FROM Employees WHERE SUBSTRING( ReverseFullName, 1, 4 ) = "Tolo";
 ```
 
