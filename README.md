@@ -91,7 +91,7 @@ ALTER TABLE FoodOrders RENAME OrderDeliveryStatus;
 ## 🧸💬 COLUMNS CONCATENATION AND DATE FORMAT AND CONDITIONS
 
 🦭💬 What is ```internal database concatenation ⁉️``` </br>
-🐐💬 ➰ In the past alter table was required for every activity and they are separated by user permission and database permission, alter ```does not immediately update``` of the target table or object instant but it requires application. Select and update are used for the validation process, someone can ```alter the table for concatenate value``` which is a single called internal concatenate and there are many of ways depending on your ```database security administrator```. </br>   
+🐐💬 ➰ In the past alter table was required for every activity and they are separated by user permission and database permission, alter ```does not immediately update``` of the target table or object instant but it requires application. Select and update are used for the validation process, someone can ```alter the table for concatenate value``` which is a single called internal concatenate and there are many of ways depending on your ```database security administrator```. 🐐💬 ➰ 🥊💥 Panus I did not see SQL Central email this year, may be he need to go to work lah hahaha~~! </br>   
 
 ```
 🧸💬 Concatinate of columns Name, "-", Quantity, "-" and OrderStatus.
