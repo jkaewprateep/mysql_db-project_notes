@@ -13,7 +13,8 @@ MySQL DB project notes - contribution for learning [META Advanced MySQL Topics](
 
 ## 🧸💬 CREATE table
 
-👧💬 🎈 Simple by define of information services and tabular storages for data information and aggregation process make it easy from installation, development, testing, deployment until maintenance and services </br>.
+👧💬 🎈 Simple by definition of information services and tabular storages for data information and aggregation process make it easy from installation, development, testing, deployment until maintenance and services </br>.
+🦤💬 ER-diagrams are useful at this stage when someone thinks it is work time amount on a simple chart diagram when they can start defining tables and procedures right-the-way, look into this side when all meta information is confirmed and process related are validated of data fields information. Simple database columns field mapping is easy and simple as eyes seeing but aggregated results do not always to be first-level observation, aggregation including time intervals, and update required information because sometimes it does not include data information in bale only but actions from users or results from confirmation process. </br>
 
 ```
 CREATE TABLE ContractInfo(
