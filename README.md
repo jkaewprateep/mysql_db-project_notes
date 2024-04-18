@@ -1,7 +1,15 @@
 # mysql_db-project_notes
 MySQL DB project notes - contribution for learning [META Advanced MySQL Topics](https://coursera.org/share/f475813ed222acfa20ff3840f5c8b358)
 
-🧸💬 Will comeback and complete after eating a banana leaf 🐑💬 ➰ แปลว่ามันหิวข้าวมาก
+🧸💬 Will comeback and complete after eating a banana leaf 🌳🍌 🐑💬 ➰ แปลว่ามันหิวข้าวมาก
+
+<p align="center" width="100%">
+    <img width="34%" src="https://github.com/jkaewprateep/mysql_db-project_notes/blob/main/Database_engineerproject_instructor.png">
+    <img width="34%" src="https://github.com/jkaewprateep/mysql_db-project_notes/blob/main/MySQL_advanced_topics_instructor.png">
+    <img width="29%" src="https://github.com/jkaewprateep/mysql_db-project_notes/blob/main/08.jpg"> </br>
+    <b> Database project | MySQL advanced | My favorite teacher 💃( 👩‍🏫 ) </b> </br>
+    <b> Pictures from the Internet </b> </br>
+</p>
 
 ## 🧸💬 CREATE table
 
